@@ -53,7 +53,7 @@
   }
   function getData() {
     let searchBar = document.getElementById("searchBar").value;
-    fetch(`http://www.omdbapi.com/?apikey=f8147154&s=${searchBar}`)
+    fetch(`https://www.omdbapi.com/?apikey=f8147154&s=${searchBar}`)
       .then((res) => res.json())
       .catch((error) => {
         console.log(error);
